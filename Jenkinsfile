@@ -14,7 +14,7 @@ node('master'){
             target: 'api.run.pivotal.io',
             organization: 'pipeline-demos',
             cloudSpace: 'development',
-            credentialsId: 'derek_sauce',
+            credentialsId: 'derek_pcf',
             manifestChoice: [manifestFile: 'config/dev/manifest.yml']
     )
   }
