@@ -8,4 +8,13 @@ node('master'){
   stage('Checkout') {
     checkout scm
   }
+
+  if(env.BRANCH_NAME == 'develop') {
+    pushToCloudFoundry(
+            target: 'api.local.pcfdev.io',
+            organization: 'pipeline-demos',
+            cloudSpace: 'development',
+            credentialsId: 'derek_sauce'
+    )
+  }
 }
