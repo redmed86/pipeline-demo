@@ -14,7 +14,8 @@ node('master'){
             target: 'api.local.pcfdev.io',
             organization: 'pipeline-demos',
             cloudSpace: 'development',
-            credentialsId: 'derek_sauce'
+            credentialsId: 'derek_sauce',
+            manifestChoice: [manifestFile: 'config/dev/manifest.yml']
     )
   }
 }
