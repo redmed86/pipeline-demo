@@ -11,7 +11,7 @@ node('master'){
 
   if(env.BRANCH_NAME == 'develop') {
     pushToCloudFoundry(
-            target: 'api.local.pcfdev.io',
+            target: 'api.run.pivotal.io',
             organization: 'pipeline-demos',
             cloudSpace: 'development',
             credentialsId: 'derek_sauce',
