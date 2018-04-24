@@ -68,7 +68,7 @@ module.exports = function(config) {
     sauceLabs: {
       testName: 'Pipeline Unit Test Demo',
       startConnect: false,
-      tunnelIdentifier: 'godsplan'
+      tunnelIdentifier: 'derek_test_tunnel'
     },
     captureTimeout: 120000,
     customLaunchers: customLaunchers,
