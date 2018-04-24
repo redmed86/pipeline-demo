@@ -4,12 +4,17 @@ node('master'){
   // def props = readProperties  file: 'project.properties'
   // def version = props.version
   def branch = "${env.BRANCH_NAME}"
+  
+  environment {
+        SAUCE_CONNECT_TUNNEL = 'myTunnel'
+  }
 
   echo branch
   // echo version
 
   stage('Checkout') {
     checkout scm
+    sh 'sc -u $SAUCE_USERNAME -k SAUCE_ACCESS_KEY -i $SAUCE_CONNECT_TUNNEL'
   }
 
   stage('Build') {
@@ -19,7 +24,7 @@ node('master'){
   stage('Unit Tests') {
     sauce('derek_sauce_key') {
       withCredentials([usernamePassword(credentialsId: 'derek_sauce_key', passwordVariable: 'SAUCE_ACCESS_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
-        sauceconnect(options: '-u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -i derek_test_tunnel', sauceConnectPath: '') {
+        sauceconnect(options: '-u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -i $SAUCE_CONNECT_TUNNEL', sauceConnectPath: '') {
           sh 'npm run test-single-run'
         }
       }
