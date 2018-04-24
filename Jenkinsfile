@@ -1,10 +1,13 @@
 #!/usr/bin/env groovy
 
 node('master'){
+  def props = readProperties  file: 'project.properties'
+  def version = props.version
   def branch = "${env.BRANCH_NAME}"
 
   echo branch
-
+  echo version
+  
   stage('Checkout') {
     checkout scm
   }
