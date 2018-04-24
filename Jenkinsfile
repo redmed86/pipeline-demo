@@ -7,7 +7,7 @@ node('master'){
 
   echo branch
   echo version
-  
+
   stage('Checkout') {
     checkout scm
   }
@@ -16,13 +16,23 @@ node('master'){
     sh 'npm install'
   }
 
+//  stage('Unit Tests') {
+//    sh 'npm run test-single-run'
+//  }
+
   if(env.BRANCH_NAME == 'develop') {
-    pushToCloudFoundry(
-            target: 'api.run.pivotal.io',
-            organization: 'pipeline_demos',
-            cloudSpace: 'development',
-            credentialsId: 'derek_pcf',
-            manifestChoice: [manifestFile: 'config/dev/manifest.yml']
-    )
+    stage('Deploy to Dev') {
+      sh 'cf push -f config/dev/manifest.yml'
+    }
+
+    stage('E2E Tests') {
+      sh 'npm run protractor'
+    }
+  }
+
+  if(env.BRANCH_NAME.startsWith('release/')) {
+    stage('Deploy to Prod') {
+      sh 'cf push -f config/prod/manifest.yml'
+    }
   }
 }
