@@ -25,7 +25,7 @@ exports.config = {
         name: "firefox-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        tunnelIdentifier: "derek_test_tunnel"
+        tunnelIdentifier: process.env.SAUCE_CONNECT_TUNNEL
     },{
         browserName: 'firefox',
         version: 'latest',
@@ -33,7 +33,7 @@ exports.config = {
         name: "firefox-tests",
         shardTestFiles: true,
         maxInstances: 25,
-        tunnelIdentifier: "derek_test_tunnel"
+        tunnelIdentifier: process.env.SAUCE_CONNECT_TUNNEL
     }
   ],
 
@@ -41,7 +41,7 @@ exports.config = {
   //   'browserName': 'chrome'
   // },
 
-  baseUrl: 'http://localhost:8000/',
+  baseUrl: 'http://localhost:7225/',
 
   framework: 'jasmine',
 
