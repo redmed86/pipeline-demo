@@ -9,6 +9,10 @@ node('master'){
     checkout scm
   }
 
+  stage('Build') {
+    sh 'npm install'
+  }
+
   if(env.BRANCH_NAME == 'develop') {
     pushToCloudFoundry(
             target: 'api.run.pivotal.io',
