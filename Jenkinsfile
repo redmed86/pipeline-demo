@@ -19,7 +19,7 @@ node('master'){
   if(env.BRANCH_NAME == 'develop') {
     stage('Deploy to Dev') {
       withCredentials([usernamePassword(credentialsId: 'derek_pcf', passwordVariable: 'CF_PW', usernameVariable: 'CF_USER')]) {
-        sh 'cf login -u $CF_USER -p CF_PW -o pipeline_demos -s development'
+        sh 'cf login -a api.run.pivotal.io -u $CF_USER -p CF_PW -o pipeline_demos -s development'
         sh 'cf push -f config/dev/manifest.yml'
       }
     }
