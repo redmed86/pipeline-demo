@@ -22,6 +22,7 @@
     "postinstall": "bower install",
     "update-deps": "npm update",
     "postupdate-deps": "bower update",
+    "lint": "./node_modules/jshint/bin/jshint app/ --exclude /app/bower_components",
     "prestart": "npm install",
     "start": "node server.js",
     "pretest": "npm install",
