@@ -33,7 +33,10 @@ node('master'){
 
   if(env.BRANCH_NAME.startsWith('release/')) {
     stage('Deploy to Prod') {
-      sh 'cf push -f config/prod/manifest.yml'
+      withCredentials([usernamePassword(credentialsId: 'derek_pcf', passwordVariable: 'CF_PW', usernameVariable: 'CF_USER')]) {
+        sh 'cf login -a api.run.pivotal.io -u $CF_USER -p $CF_PW -o pipeline_demos -s production'
+        sh 'cf push -f config/prod/manifest.yml'
+      }
     }
   }
 }
