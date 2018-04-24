@@ -24,16 +24,14 @@ exports.config = {
         platform: 'OS X 10.10',
         name: "firefox-tests",
         shardTestFiles: true,
-        maxInstances: 25,
-        tunnelIdentifier: "derek_test_tunnel"
+        maxInstances: 25
     },{
         browserName: 'firefox',
         version: 'latest',
         platform: 'Windows 7',
         name: "firefox-tests",
         shardTestFiles: true,
-        maxInstances: 25,
-        tunnelIdentifier: "derek_test_tunnel"
+        maxInstances: 25
     }
   ],
 
