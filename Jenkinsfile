@@ -6,7 +6,8 @@ node('master'){
   def branch = "${env.BRANCH_NAME}"
   
   environment {
-        SAUCE_CONNECT_TUNNEL = 'myTunnel'
+    // could pass this in as Jenkins parameter if desired
+    SAUCE_CONNECT_TUNNEL = 'myTunnel'
   }
 
   echo branch
