@@ -25,7 +25,9 @@ node('master'){
     }
 
     stage('E2E Tests') {
-      sh 'npm run protractor'
+      withCredentials([usernamePassword(credentialsId: 'derek_sauce_key', passwordVariable: 'SAUCE_USERNAME', usernameVariable: 'SAUCE_ACCESS_KEY')]) {
+        sh 'npm run protractor'
+      }
     }
   }
 
