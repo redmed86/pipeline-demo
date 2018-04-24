@@ -16,6 +16,14 @@ node('master'){
     sh 'npm install'
   }
 
+  stage('Unit Tests') {
+    withCredentials([usernamePassword(credentialsId: 'derek_sauce_key', passwordVariable: 'SAUCE_ACCESS_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
+      sauceconnect(options: '-u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -i derek_test_tunnel', sauceConnectPath: '') {
+        sh 'npm run test-single-run'
+      }
+    }
+  }
+
 //  stage('Unit Tests') {
 //    sh 'npm run test-single-run'
 //  }
