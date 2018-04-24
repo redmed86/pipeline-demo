@@ -17,7 +17,7 @@ node('master'){
   }
 
   stage('Unit Tests') {
-    sauce('derek_sauce') {
+    sauce('derek_sauce_key') {
       withCredentials([usernamePassword(credentialsId: 'derek_sauce_key', passwordVariable: 'SAUCE_ACCESS_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
         sauceconnect(options: '-u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY -i derek_test_tunnel', sauceConnectPath: '') {
           sh 'npm run test-single-run'
