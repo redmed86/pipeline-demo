@@ -41,7 +41,7 @@ exports.config = {
   //   'browserName': 'chrome'
   // },
 
-  baseUrl: 'http://localhost:7225/',
+  baseUrl: 'https://develop-angular-demo-app.cfapps.io/#!/view1',
 
   framework: 'jasmine',
 
