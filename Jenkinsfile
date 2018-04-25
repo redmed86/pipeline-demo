@@ -16,6 +16,10 @@ node('master'){
     sh 'npm install'
   }
 
+  stage('Unit Tests') {
+    echo 'run unit tests here'
+  }
+
   if(env.BRANCH_NAME == 'develop') {
     stage('Deploy to Dev') {
       withCredentials([usernamePassword(credentialsId: 'derek_pcf', passwordVariable: 'CF_PW', usernameVariable: 'CF_USER')]) {
