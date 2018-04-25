@@ -1,7 +1,7 @@
 {
   "name": "cicd-demo-application",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A demo project for displaying CICD as a software process.",
   "repository": "https://github.com/redmed86/pipeline-demo.git",
   "license": "MIT",
@@ -9,17 +9,20 @@
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
-    "karma": "^0.13.22",
+    "karma": "~1.4.0",
     "karma-chrome-launcher": "^0.2.3",
     "karma-firefox-launcher": "^0.1.7",
-    "karma-jasmine": "^0.3.8",
+    "karma-jasmine": "~1.1.0",
+    "karma-sauce-launcher": "1.2.0",
     "karma-junit-reporter": "^0.4.1",
-    "protractor": "^4.0.9"
+    "protractor": "5.1.2",
+    "jshint": "2.9.5"
   },
   "scripts": {
     "postinstall": "bower install",
     "update-deps": "npm update",
     "postupdate-deps": "bower update",
+    "lint": "./node_modules/jshint/bin/jshint app/ --exclude /app/bower_components",
     "prestart": "npm install",
     "start": "node server.js",
     "pretest": "npm install",

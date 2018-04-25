@@ -39,4 +39,18 @@ describe('my app', function() {
     });
 
   });
+
+  // describe('viewDemo', function() {
+  //
+  //   beforeEach(function() {
+  //     browser.get('index.html#!/viewDemo');
+  //   });
+  //
+  //
+  //   it('should render text that says the demo will pass', function() {
+  //     expect(element.all(by.css('[ng-view] p')).get(1).getText()).
+  //       toMatch(/This demo is going to pass!/);
+  //   });
+  //
+  // });
 });
