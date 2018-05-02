@@ -51,6 +51,6 @@ describe('my app', function() {
   //     expect(element.all(by.css('[ng-view] p')).get(1).getText()).
   //       toMatch(/This demo is going to pass!/);
   //   });
-
-  });
+  //
+  // });
 });
