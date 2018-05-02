@@ -8,6 +8,7 @@ To start the application locally simply run:
 
 ###Features List
 -Get Sauce E2E test results to return to the develop job Jenkins console
+-Add build pass fail and test pass fail status to Protractor tests
 -Build and run project during PR build, then run E2E test suite on Sauce using Sauce Connect
 -Automate the whole project with gulp
 -Move logic into NodeJS API layer
