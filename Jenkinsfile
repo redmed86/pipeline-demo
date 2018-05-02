@@ -1,8 +1,6 @@
 #!/usr/bin/env groovy
 
 node('master'){
-  // def props = readProperties  file: 'project.properties'
-  // def version = props.version
   def branch = "${env.BRANCH_NAME}"
 
   echo branch
@@ -12,12 +10,14 @@ node('master'){
     checkout scm
   }
 
-  stage('Build') {
-    sh 'npm install'
-  }
+  if(env.BRANCH_NAME.startsWith('feature/') || env.BRANCH_NAME.startsWith('bugfix/')) {
+    stage('Build') {
+      sh 'npm install'
+    }
 
-  stage('Unit Tests') {
-    echo 'run unit tests here'
+    stage('Unit Tests') {
+      echo 'run unit tests here'
+    }
   }
 
   if(env.BRANCH_NAME == 'develop') {
@@ -35,7 +35,7 @@ node('master'){
     }
   }
 
-  if(env.BRANCH_NAME.startsWith('release/')) {
+  if(env.BRANCH_NAME.startsWith('release/') || env.BRANCH_NAME.startsWith('hotfix/')) {
     stage('Deploy to Prod') {
       withCredentials([usernamePassword(credentialsId: 'derek_pcf', passwordVariable: 'CF_PW', usernameVariable: 'CF_USER')]) {
         sh 'cf login -a api.run.pivotal.io -u $CF_USER -p $CF_PW -o pipeline_demos -s production'
