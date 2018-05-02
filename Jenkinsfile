@@ -10,11 +10,11 @@ node('master'){
     checkout scm
   }
 
+  stage('Build') {
+    sh 'npm install'
+  }
+  
   if(env.BRANCH_NAME.startsWith('feature/') || env.BRANCH_NAME.startsWith('bugfix/')) {
-    stage('Build') {
-      sh 'npm install'
-    }
-
     stage('Unit Tests') {
       echo 'run unit tests here'
     }
