@@ -4,7 +4,6 @@ exports.config = {
 
   sauceKey: process.env.SAUCE_ACCESS_KEY,
 
-  // testobject_api_key: '59CE6AD64AE24CC5B1451EB76B833F2E',
   sauceBuild: "angular-pipeline-demo: " + process.env.BRANCH_NAME + "-" + process.env.BUILD_NUMBER,
 
   allScriptsTimeout: 11000,
@@ -32,6 +31,944 @@ exports.config = {
         name: "firefox-tests",
         shardTestFiles: true,
         maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'OS X 10.10',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
+    },{
+        browserName: 'firefox',
+        version: 'latest',
+        platform: 'Windows 7',
+        name: "firefox-tests",
+        shardTestFiles: true,
+        maxInstances: 25
     }
   ],
 
@@ -39,6 +976,7 @@ exports.config = {
   //   'browserName': 'chrome'
   // },
 
+  //baseUrl: 'http://localhost:7225/#!/view1',
   baseUrl: 'https://develop-angular-demo-app.cfapps.io/#!/view1',
 
   framework: 'jasmine',
